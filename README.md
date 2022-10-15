@@ -1,5 +1,7 @@
 # Canvas File Oracle
 
+**Important Notice**: This vulnerability has been patched as of 10/15/2022. 
+
 ## Exploitation Summary
 
 Our researcher has found that due to the absent file permission checking in the API, the value of `canvadoc_session_url` makes it possible for a `student` to view any uploaded files in a course the student has enrolled, even if the file _belongs to an unpublished module_, _is locked_, or _is locked and belongs to an unpublished module_.
